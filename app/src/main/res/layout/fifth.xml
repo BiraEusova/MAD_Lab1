@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="center"
+        tools:context=".ThirdActivity"
+        tools:ignore="ExtraText">
+
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="88dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/soupImageView"
+                        style="@style/FavoriteImageStyle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/soup" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/ScrollText"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/soup"
+                        app:layout_constraintStart_toEndOf="@+id/soupImageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/min25TextView"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/twentyfivemin"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/soupImageView" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:text="@string/fourportions"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toTopOf="@+id/min25TextView"
+                        app:layout_constraintStart_toEndOf="@+id/soupImageView" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        style="@style/FavoriteImageStyle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/classiccheesecake" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moreonehour"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        style="@style/ScrollText"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/classic"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/twelvportions"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toTopOf="@+id/textView6"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        style="@style/FavoriteImageStyle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/cesar" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thirtyfivemin"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        style="@style/ScrollText"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/cesar"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fourportions"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toTopOf="@+id/textView4"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:onClick="onClickMeat">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        style="@style/FavoriteImageStyle"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/meetballs" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/ScrollText"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/meatballs"
+                        app:layout_constraintStart_toEndOf="@+id/imageView4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/twentyfivemin"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/moreonehour"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toTopOf="@+id/textView9"
+                        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        style="@style/FavoriteImageStyle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/cookies" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        style="@style/ScrollText"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/cookies"
+                        app:layout_constraintStart_toEndOf="@+id/imageView5"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView5" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eightportions"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toTopOf="@+id/textView14"
+                        app:layout_constraintStart_toEndOf="@+id/imageView5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/soupImageView2"
+                        style="@style/FavoriteImageStyle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/soup" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        style="@style/ScrollText"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/soup"
+                        app:layout_constraintStart_toEndOf="@+id/soupImageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/min25TextView2"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/twentyfivemin"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/soupImageView2" />
+
+                    <TextView
+                        android:id="@+id/textView152"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:text="@string/fourportions"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toTopOf="@+id/min25TextView2"
+                        app:layout_constraintStart_toEndOf="@+id/soupImageView2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView50"
+                        style="@style/FavoriteImageStyle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/cookies" />
+
+                    <TextView
+                        android:id="@+id/textView120"
+                        style="@style/ScrollText"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/cookies"
+                        app:layout_constraintStart_toEndOf="@+id/imageView50"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView140"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView50" />
+
+                    <TextView
+                        android:id="@+id/textView190"
+                        style="@style/ScrollText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eightportions"
+                        android:textColor="@color/scrollInfo"
+                        app:layout_constraintBottom_toTopOf="@+id/textView140"
+                        app:layout_constraintStart_toEndOf="@+id/imageView50" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="88dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            android:fitsSystemWindows="true">
+
+            <TextView
+                android:id="@+id/recipesTextView"
+                style="@style/ActionBarText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/favorite"
+                android:visibility="visible" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

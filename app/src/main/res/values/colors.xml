@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="colorRecipeApp">#636363</color>
+    <color name="colorOrangeAccent">#E16118</color>
+    <color name="neutralGray">#E5E5E5</color>
+    <color name="BotNavGreen">#98AE3E</color>
+    <color name="scrollText">#171717</color>
+    <color name="scrollInfo">#757575</color>
+    <color name="LightButton">#EDEDED</color>
+    <color name="DarkButton">#959595</color>
+</resources>

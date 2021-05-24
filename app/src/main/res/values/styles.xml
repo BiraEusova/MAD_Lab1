@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Основной стиль приложения -->
+    <style name="MyAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/White</item>
+        <item name="colorPrimaryDark">@color/White</item>
+        <item name="colorAccent">@color/colorOrangeAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Тема ради оранжевого курсора -->
+    <style name="SpikeTheme">parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorOrangeAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Тема ради диалогового окна -->
+    <style name="SpikeTheme2" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorOrangeAccent</item>
+    </style>
+
+    <!-- Стиль текста стартового активити -->
+    <style name="RecipeAppStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorRecipeApp</item>
+        <item name="android:fontFamily">@font/quattrocento_sans</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <!-- Стиль текста заголовков -->
+    <style name="ActionBarText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+    <!-- Стиль полей ввода -->
+    <style name="TextFieldStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:background">@color/neutralGray</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:theme">@style/SpikeTheme</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="boxBackgroundColor">@color/neutralGray</item>
+        <item name="boxStrokeColor">@color/colorOrangeAccent</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextColor">@color/colorOrangeAccent</item>
+    </style>
+
+    <!-- Стиль основного текста-информации -->
+    <style name="ScrollText" parent="@android:style/TextAppearance">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textColor">@color/scrollText</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+
+    <style name="ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:backgroundTint">@color/colorOrangeAccent</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="FavoriteImageStyle">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginVertical">16dp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="StyleForCirclesPoint">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>
